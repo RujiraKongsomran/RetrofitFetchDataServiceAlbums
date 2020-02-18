@@ -32,9 +32,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        holder.txt_user_id.setText(albumList.get(position).getUserId());
-        holder.txt_id.setText(albumList.get(position).getId());
-        holder.txt_title.setText(albumList.get(position).getTitle().toString());
+        holder.txt_user_id.setText(String.valueOf(albumList.get(position).getUserId()));
+        holder.txt_id.setText(String.valueOf(albumList.get(position).getId()));
+        holder.txt_title.setText(String.valueOf(albumList.get(position).getTitle()));
     }
 
     @Override
